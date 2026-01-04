@@ -8,22 +8,24 @@ public class PlayerConroller : MonoBehaviour
 
     [Header("Missile")]
     public GameObject MissiliePrefab;
-    public Transform MuzzleSpawnPosition; // Mermi çıkış noktası ile efekt noktası aynı olabilir
+    public Transform MuzzleSpawnPosition;
     public float DestroyTime = 5f;
     public Transform MissileSpawnPoint;
 
     [Header("Components")]
-    // [GEREKSİNİM 10] Animator referansı
-    public Animator shipAnimator; 
+    public Animator shipAnimator;
+    
+    // YENİ EKLENEN KISIM: Motor Efekti İçin Değişken
+    [Header("Engine Effects")]
+    public GameObject EngineThrustEffect; 
 
     private void Update()
     {
         MovePlayer();
         PlayerShoot();
-        CheckEnemyAhead(); // Raycast fonksiyonunu çağırıyoruz
+        CheckEnemyAhead();
     }
 
-    // [GEREKSİNİM 6] LateUpdate: Hareket bittikten sonra sınırları kontrol etmek için idealdir.
     private void LateUpdate()
     {
         ClampPosition();
@@ -31,13 +33,26 @@ public class PlayerConroller : MonoBehaviour
 
     void MovePlayer()
     {
-        float moveX = Input.GetAxis("Horizontal"); // GetAxis raw değeri -1 ile 1 arasındadır.
-        float moveZ = Input.GetAxis("Vertical");
+        float moveX = Input.GetAxis("Horizontal"); 
+        float moveZ = Input.GetAxis("Vertical"); // W tuşu veya Yukarı ok tuşu pozitif değer verir
 
-        // [GEREKSİNİM 10] Animator: Hareket varsa animasyonu tetikle (Örn: Motor parlaklığı artar)
+        // YENİ EKLENEN KISIM: Motor Efektini Kontrol Etme
+        if (EngineThrustEffect != null)
+        {
+            // Eğer W'ye basıyorsak (moveZ > 0) efekti aç, yoksa kapat
+            if (moveZ > 0)
+            {
+                EngineThrustEffect.SetActive(true);
+            }
+            else
+            {
+                EngineThrustEffect.SetActive(false);
+            }
+        }
+
+        // Animator Kodun (Vazgeçmediysen kalsın)
         if(shipAnimator != null)
         {
-            // "IsMoving" adında bir bool parametresi olduğunu varsayıyoruz.
             shipAnimator.SetBool("IsMoving", moveX != 0 || moveZ != 0);
         }
 
@@ -45,32 +60,26 @@ public class PlayerConroller : MonoBehaviour
         transform.Translate(movement);
     }
 
-    // [GEREKSİNİM 6] Ekran sınırlarını belirleme (LateUpdate içinde kullanılır)
+    // ... Diğer fonksiyonların (ClampPosition, CheckEnemyAhead, vs.) aynı kalacak ...
+    
     void ClampPosition()
     {
         Vector3 viewPos = transform.position;
-        // X ekseninde ekran dışına çıkmayı engelle (Değerleri sahnene göre ayarla)
-        viewPos.x = Mathf.Clamp(viewPos.x, -2.5f, 2.5f); 
+        // Düzelttiğimiz geniş ekran sınırları
+        viewPos.x = Mathf.Clamp(viewPos.x, -9.0f, 9.0f); 
         viewPos.y = Mathf.Clamp(viewPos.y, -4.5f, 4.5f);
         transform.position = viewPos;
     }
 
-    // [GEREKSİNİM 5] RayCast: Öndeki düşmanları algılama sistemi
+    // ... Geri kalan kodlar aynı ...
+    
     void CheckEnemyAhead()
     {
-        // Geminin ucundan yukarı doğru bir ışın gönder
         RaycastHit2D hit = Physics2D.Raycast(MissileSpawnPoint.position, Vector2.up, 10f);
-        
-        // Editörde görmek için kırmızı çizgi çiz
         Debug.DrawRay(MissileSpawnPoint.position, Vector3.up * 10f, Color.red);
-
-        if (hit.collider != null)
+        if (hit.collider != null && hit.collider.CompareTag("Enemy"))
         {
-            if (hit.collider.CompareTag("Enemy"))
-            {
-                Debug.Log("Düşman Kilitlendi! Ateş Serbest!");
-                // İleride buraya otomatik ateş etme veya hedef imleci rengi değiştirme eklenebilir.
-            }
+            Debug.Log("Düşman Kilitlendi!");
         }
     }
 
@@ -80,7 +89,6 @@ public class PlayerConroller : MonoBehaviour
         {
             SpawnMissile();
             SpawnMuzzleFlash();
-            Debug.Log("Pew Pew!");
         }
     }
 
@@ -108,7 +116,6 @@ public class PlayerConroller : MonoBehaviour
             GameObject gm = Instantiate(GameManager.instance.ParticleEffect, transform.position, Quaternion.identity);
             Destroy(gm, 2f);
             Destroy(this.gameObject);
-            Debug.Log("Player hit by Enemy!");
         }
     }
 }
