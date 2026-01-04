@@ -1390,7 +1390,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7795e227be05c2248bd3d365b591e15b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyPrefab: {fileID: 7065451153807550212, guid: a90814d8ab55eb84e96e025e311e85d2, type: 3}
+  EnemyPrefabs:
+  - {fileID: 7065451153807550212, guid: a90814d8ab55eb84e96e025e311e85d2, type: 3}
+  - {fileID: 6500197894439291741, guid: 1fc510cfef4ec3844be3c7202eab8ae6, type: 3}
+  - {fileID: 271276125632518964, guid: 8f655e6af43170a488f9a2bf665f5a50, type: 3}
   minInstantiateValue: -10
   maxInstantiateValue: 10
   enemyDestroyTime: 10
@@ -2105,6 +2108,7 @@ MonoBehaviour:
   MuzzleSpawnPosition: {fileID: 1863313159}
   DestroyTime: 5
   MissileSpawnPoint: {fileID: 905499511}
+  shipAnimator: {fileID: 0}
 --- !u!61 &1931797141
 BoxCollider2D:
   m_ObjectHideFlags: 0
