@@ -642,7 +642,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -48, y: -1}
+  m_AnchoredPosition: {x: -74, y: -1}
   m_SizeDelta: {x: 510.52, y: 135.4666}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &263605993
@@ -665,8 +665,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "y\xF6n tu\u015Flar\u0131 ile oynan\u0131yor\nspace tu\u015Fu ate\u015F
-    etmek i\xE7in\nesc tusu duraklatmak i\xE7in"
+  m_text: "y\xF6n tu\u015Flar\u0131 ile oynan\u0131yor\n\nspace tu\u015Fu ate\u015F
+    etmek i\xE7in\n\nesc tusu duraklatmak i\xE7in"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1234,8 +1234,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -159.04, y: 237}
-  m_SizeDelta: {x: 591.77, y: 110.8161}
+  m_AnchoredPosition: {x: -1114, y: 203}
+  m_SizeDelta: {x: 591.77, y: 208.8808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &624788940
 MonoBehaviour:
@@ -1752,7 +1752,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 227.99995, y: 27.3}
+  m_AnchoredPosition: {x: 228, y: 75.7}
   m_SizeDelta: {x: 100, y: 35.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &878659886
@@ -1999,6 +1999,10 @@ MonoBehaviour:
   MuzzleFlashEffect: {fileID: 100002, guid: 565cdc2ed7b030a41accd8f00ae59a50, type: 3}
   StartMenu: {fileID: 1949293908}
   PausePanel: {fileID: 163655914}
+  AsteroidPrefabs:
+  - {fileID: 1350472877957527996, guid: c51d2945f358d4348b41cab6240ae46c, type: 3}
+  - {fileID: 692174652318510282, guid: c4fe888fa14be1b4087e43059c386738, type: 3}
+  - {fileID: 2340216076556921137, guid: f40be23d77db4614c8ea5214416d4c67, type: 3}
   scoreText: {fileID: 1464776197}
   bestScoreStart: {fileID: 1040920984}
   bestScorePause: {fileID: 882356416}
@@ -2322,7 +2326,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 228, y: -8.0183}
+  m_AnchoredPosition: {x: 237, y: -5.4}
   m_SizeDelta: {x: 99.997, y: 37.1198}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1135431519
@@ -2353,7 +2357,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1135431520
 CanvasRenderer:

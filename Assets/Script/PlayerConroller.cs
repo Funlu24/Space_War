@@ -138,7 +138,7 @@ public class PlayerConroller : MonoBehaviour
         }
     }
 
-    void TakeDamage()
+    public void TakeDamage()
     {
         health--; 
 

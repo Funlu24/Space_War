@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
     [Header("UI & Panels")]
     public GameObject StartMenu;
     public GameObject PausePanel;
+    [Header("Asteroid Spawning")]
+public GameObject[] AsteroidPrefabs; // Meteor çeşitleri
     
     // --- BURAYI DEĞİŞTİRDİK ---
     // Artık "Text" değil "TextMeshProUGUI" istiyoruz.
@@ -49,6 +51,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f;
         
         InvokeRepeating("InstantiateEnemy", 1f, 1f);
+        InvokeRepeating("InstantiateAsteroid", 2f, 3f);
     }
 
     private void Update()
@@ -86,6 +89,22 @@ public class GameManager : MonoBehaviour
         GameObject enemy = Instantiate(EnemyPrefabs[randomIndex], Enemypos, Quaternion.Euler(0, 0, 180f));
         Destroy(enemy, enemyDestroyTime);
     }
+    void InstantiateAsteroid()
+{
+    // Oyun duraklatıldıysa veya menüdeysek üretme
+    if (Time.timeScale == 0f) return;
+
+    Vector3 asteroidPos = new Vector3(Random.Range(minInstantiateValue, maxInstantiateValue), 7f);
+
+    // Rastgele bir meteor seç
+    int randomIndex = Random.Range(0, AsteroidPrefabs.Length);
+
+    // Oluştur
+    GameObject asteroid = Instantiate(AsteroidPrefabs[randomIndex], asteroidPos, Quaternion.identity);
+
+    // 10 saniye sonra yok et (Ekranı doldurmasın)
+    Destroy(asteroid, 10f);
+}
 
     public void StartGameButton()
     {
