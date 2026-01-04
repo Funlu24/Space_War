@@ -31,5 +31,13 @@ private void Update()
 			Destroy(gm, DestroyTime);
 			Debug.Log("Pew Pew!");
 		}
-	}
+}
+		private void OnCollisionEnter2D(Collision2D collision)
+		{
+			if (collision.gameObject.CompareTag("Enemy"))
+			{
+				Debug.Log("Player hit by Enemy!");
+			}
+		}
+	
 }
