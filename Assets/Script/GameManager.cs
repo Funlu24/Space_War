@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; 
 using TMPro; // <-- BU KÜTÜPHANEYİ EKLEDİK (TextMeshPro için şart)
+using UnityEngine.SceneManagement; // <-- Sahne yönetimi için şart!
 
 public class GameManager : MonoBehaviour
 {
@@ -88,13 +89,23 @@ public class GameManager : MonoBehaviour
 
     public void StartGameButton()
     {
-        score = 0; 
-        scoreText.text = "Score: 0";
-        
-        StartMenu.SetActive(false);
-        Time.timeScale = 1f;
+        // Kontrol Ediyoruz: Sahnede "Player" etiketli bir obje var mı?
+        if (GameObject.FindGameObjectWithTag("Player") != null)
+        {
+            // OYUNCU YAŞIYOR (İlk açılış veya Pause'dan devam)
+            StartMenu.SetActive(false);
+            Time.timeScale = 1f;
+        }
+        else
+        {
+            // OYUNCU ÖLMÜŞ (Destroy olmuş)
+            // Sahneyi baştan yükle (Reset at)
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            
+            // NOT: Sahne yeniden yüklenince oyunun 'Start' fonksiyonu çalışacak 
+            // ve menü otomatik olarak tekrar açılacak. Bu normaldir.
+        }
     }
-
     public void PauseGameButton(bool isPaused)
     {
         if (isPaused)
