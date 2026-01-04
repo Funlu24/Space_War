@@ -24,7 +24,7 @@ private void Update()
 	}
 	 void PlayerShoot()
 	{
-		if (Input.GetButtonDown("keyCode.Space"))
+		if (Input.GetButtonDown("Jump"))
 		{
 			GameObject gm = Instantiate(MissiliePrefab, MissileSpawnPoint.position, Quaternion.identity);
 			gm.transform.SetParent(null);

@@ -1,0 +1,406 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffe70aba2e7074048aca5de573b64a59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SimpleSelectedItems:
+    m_Keys:
+    - .collabignore
+    - Assets/2D Space Kit.meta
+    - Assets/2D Space Kit/Asteroids.meta
+    - Assets/2D Space Kit/Asteroids/Asteroid 1.png
+    - Assets/2D Space Kit/Asteroids/Asteroid 1.png.meta
+    - Assets/2D Space Kit/Asteroids/Asteroid 2.png
+    - Assets/2D Space Kit/Asteroids/Asteroid 2.png.meta
+    - Assets/2D Space Kit/Asteroids/Asteroid 3.png
+    - Assets/2D Space Kit/Asteroids/Asteroid 3.png.meta
+    - Assets/2D Space Kit/Asteroids/Asteroid 4.png
+    - Assets/2D Space Kit/Asteroids/Asteroid 4.png.meta
+    - Assets/2D Space Kit/Asteroids/Asteroid 5.png
+    - Assets/2D Space Kit/Asteroids/Asteroid 5.png.meta
+    - Assets/2D Space Kit/Asteroids/Asteroid 6.png
+    - Assets/2D Space Kit/Asteroids/Asteroid 6.png.meta
+    - Assets/2D Space Kit/Background Elements.meta
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae.meta
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/DustCloud 1.png
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/DustCloud 1.png.meta
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/DustCloud 2.png
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/DustCloud 2.png.meta
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/DustWisps 1.png
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/DustWisps 1.png.meta
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/DustWisps 2.png
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/DustWisps 2.png.meta
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/EM Cloud (1).png
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/EM Cloud (1).png.meta
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/EM Cloud (2).png
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/EM Cloud (2).png.meta
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/EM Cloud (3).png
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/EM Cloud (3).png.meta
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/Materials.meta
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/Materials/EM Cloud
+      1.mat
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/Materials/EM Cloud
+      1.mat.meta
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/Materials/EM Cloud
+      2.mat
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/Materials/EM Cloud
+      2.mat.meta
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/Materials/EM Cloud
+      3.mat
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/Materials/EM Cloud
+      3.mat.meta
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/Nebula 1.png
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/Nebula 1.png.meta
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/Nebula 2.png
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/Nebula 2.png.meta
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/Nebula 3.png
+    - Assets/2D Space Kit/Background Elements/Dust and Nebulae/Nebula 3.png.meta
+    - Assets/2D Space Kit/Background Elements/Planets.meta
+    - Assets/2D Space Kit/Background Elements/Planets/(Small) Earthlike 1.png
+    - Assets/2D Space Kit/Background Elements/Planets/(Small) Earthlike 1.png.meta
+    - Assets/2D Space Kit/Background Elements/Planets/(Small) Rocky 1.png
+    - Assets/2D Space Kit/Background Elements/Planets/(Small) Rocky 1.png.meta
+    - Assets/2D Space Kit/Background Elements/Planets/Barren 2.png
+    - Assets/2D Space Kit/Background Elements/Planets/Barren 2.png.meta
+    - Assets/2D Space Kit/Background Elements/Planets/Desert 1.png
+    - Assets/2D Space Kit/Background Elements/Planets/Desert 1.png.meta
+    - Assets/2D Space Kit/Background Elements/Planets/Desert 2.png
+    - Assets/2D Space Kit/Background Elements/Planets/Desert 2.png.meta
+    - Assets/2D Space Kit/Background Elements/Planets/Desert 3.png
+    - Assets/2D Space Kit/Background Elements/Planets/Desert 3.png.meta
+    - Assets/2D Space Kit/Background Elements/Planets/Earthlike 1.png
+    - Assets/2D Space Kit/Background Elements/Planets/Earthlike 1.png.meta
+    - Assets/2D Space Kit/Background Elements/Planets/Earthlike 2.png
+    - Assets/2D Space Kit/Background Elements/Planets/Earthlike 2.png.meta
+    - Assets/2D Space Kit/Background Elements/Planets/Gas 1.png
+    - Assets/2D Space Kit/Background Elements/Planets/Gas 1.png.meta
+    - Assets/2D Space Kit/Background Elements/Planets/Gas 2.png
+    - Assets/2D Space Kit/Background Elements/Planets/Gas 2.png.meta
+    - Assets/2D Space Kit/Background Elements/Planets/Gas 3.png
+    - Assets/2D Space Kit/Background Elements/Planets/Gas 3.png.meta
+    - Assets/2D Space Kit/Background Elements/Planets/Ice 1.png
+    - Assets/2D Space Kit/Background Elements/Planets/Ice 1.png.meta
+    - Assets/2D Space Kit/Background Elements/Planets/Planet Masks.meta
+    - Assets/2D Space Kit/Background Elements/Planets/Planet Masks/Mask 1 Full.png
+    - Assets/2D Space Kit/Background Elements/Planets/Planet Masks/Mask 1 Full.png.meta
+    - Assets/2D Space Kit/Background Elements/Planets/Planet Masks/Mask Half.png
+    - Assets/2D Space Kit/Background Elements/Planets/Planet Masks/Mask Half.png.meta
+    - Assets/2D Space Kit/Background Elements/Planets/Planet Masks/Mask Left 1.png
+    - Assets/2D Space Kit/Background Elements/Planets/Planet Masks/Mask Left 1.png.meta
+    - Assets/2D Space Kit/Background Elements/Planets/Planet Masks/Mask Left 2.png
+    - Assets/2D Space Kit/Background Elements/Planets/Planet Masks/Mask Left 2.png.meta
+    - Assets/2D Space Kit/Background Elements/Planets/Planet Masks/Mask Left 3.png
+    - Assets/2D Space Kit/Background Elements/Planets/Planet Masks/Mask Left 3.png.meta
+    - Assets/2D Space Kit/Background Elements/Planets/Planet Masks/Mask Right 1.png
+    - Assets/2D Space Kit/Background Elements/Planets/Planet Masks/Mask Right 1.png.meta
+    - Assets/2D Space Kit/Background Elements/Planets/Planet Masks/Mask Right 2.png
+    - Assets/2D Space Kit/Background Elements/Planets/Planet Masks/Mask Right 2.png.meta
+    - Assets/2D Space Kit/Background Elements/Planets/Planet Masks/Mask Right 3.png
+    - Assets/2D Space Kit/Background Elements/Planets/Planet Masks/Mask Right 3.png.meta
+    - Assets/2D Space Kit/Background Elements/Planets/Planet Masks/Note.txt
+    - Assets/2D Space Kit/Background Elements/Planets/Planet Masks/Note.txt.meta
+    - Assets/2D Space Kit/Background Elements/Planets/Primordial 1.png
+    - Assets/2D Space Kit/Background Elements/Planets/Primordial 1.png.meta
+    - Assets/2D Space Kit/Background Elements/Planets/Thick Atmo 1.png
+    - Assets/2D Space Kit/Background Elements/Planets/Thick Atmo 1.png.meta
+    - Assets/2D Space Kit/Background Elements/Planets/Thick Atmo 2.png
+    - Assets/2D Space Kit/Background Elements/Planets/Thick Atmo 2.png.meta
+    - Assets/2D Space Kit/Background Elements/Stars.meta
+    - Assets/2D Space Kit/Background Elements/Stars/Brown Dwarf.png
+    - Assets/2D Space Kit/Background Elements/Stars/Brown Dwarf.png.meta
+    - Assets/2D Space Kit/Background Elements/Stars/Dwarf.png
+    - Assets/2D Space Kit/Background Elements/Stars/Dwarf.png.meta
+    - Assets/2D Space Kit/Background Elements/Stars/Hypergiant.png
+    - Assets/2D Space Kit/Background Elements/Stars/Hypergiant.png.meta
+    - Assets/2D Space Kit/Background Elements/Stars/Main Sequence.png
+    - Assets/2D Space Kit/Background Elements/Stars/Main Sequence.png.meta
+    - Assets/2D Space Kit/Background Elements/Stars/Recolor Us!.txt
+    - Assets/2D Space Kit/Background Elements/Stars/Recolor Us!.txt.meta
+    - Assets/2D Space Kit/Backgrounds.meta
+    - Assets/2D Space Kit/Backgrounds/1.png
+    - Assets/2D Space Kit/Backgrounds/1.png.meta
+    - Assets/2D Space Kit/Backgrounds/2.png
+    - Assets/2D Space Kit/Backgrounds/2.png.meta
+    - Assets/2D Space Kit/Backgrounds/3.png
+    - Assets/2D Space Kit/Backgrounds/3.png.meta
+    - Assets/2D Space Kit/Backgrounds/4.png
+    - Assets/2D Space Kit/Backgrounds/4.png.meta
+    - Assets/2D Space Kit/Backgrounds/5.png
+    - Assets/2D Space Kit/Backgrounds/5.png.meta
+    - Assets/2D Space Kit/Backgrounds/6.png
+    - Assets/2D Space Kit/Backgrounds/6.png.meta
+    - Assets/2D Space Kit/Backgrounds/7.png
+    - Assets/2D Space Kit/Backgrounds/7.png.meta
+    - Assets/2D Space Kit/Backgrounds/8.png
+    - Assets/2D Space Kit/Backgrounds/8.png.meta
+    - Assets/2D Space Kit/Backgrounds/Background Tip.txt
+    - Assets/2D Space Kit/Backgrounds/Background Tip.txt.meta
+    - Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048.meta
+    - Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 1.jpg
+    - Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 1.jpg.meta
+    - Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 2.jpg
+    - Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 2.jpg.meta
+    - Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 3.jpg
+    - Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 3.jpg.meta
+    - Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 4.jpg
+    - Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 4.jpg.meta
+    - Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 5.jpg
+    - Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 5.jpg.meta
+    - Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 6.jpg
+    - Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Fantasy 6.jpg.meta
+    - Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Note.txt
+    - Assets/2D Space Kit/Backgrounds/Fantasy Purple 2048/Note.txt.meta
+    - Assets/2D Space Kit/Backgrounds/Red Nebula 2048.meta
+    - Assets/2D Space Kit/Backgrounds/Red Nebula 2048/background1.jpg
+    - Assets/2D Space Kit/Backgrounds/Red Nebula 2048/background1.jpg.meta
+    - Assets/2D Space Kit/Backgrounds/Red Nebula 2048/background2.jpg
+    - Assets/2D Space Kit/Backgrounds/Red Nebula 2048/background2.jpg.meta
+    - Assets/2D Space Kit/Backgrounds/Red Nebula 2048/background3.jpg
+    - Assets/2D Space Kit/Backgrounds/Red Nebula 2048/background3.jpg.meta
+    - Assets/2D Space Kit/Backgrounds/Red Nebula 2048/background4.jpg
+    - Assets/2D Space Kit/Backgrounds/Red Nebula 2048/background4.jpg.meta
+    - Assets/2D Space Kit/Backgrounds/Red Nebula 2048/background5.jpg
+    - Assets/2D Space Kit/Backgrounds/Red Nebula 2048/background5.jpg.meta
+    - Assets/2D Space Kit/Debris.meta
+    - Assets/2D Space Kit/Debris/Debris (1).png
+    - Assets/2D Space Kit/Debris/Debris (1).png.meta
+    - Assets/2D Space Kit/Debris/Debris (2).png
+    - Assets/2D Space Kit/Debris/Debris (2).png.meta
+    - Assets/2D Space Kit/Debris/Debris (3).png
+    - Assets/2D Space Kit/Debris/Debris (3).png.meta
+    - Assets/2D Space Kit/Debris/Debris (4).png
+    - Assets/2D Space Kit/Debris/Debris (4).png.meta
+    - Assets/2D Space Kit/Debris/Debris (5).png
+    - Assets/2D Space Kit/Debris/Debris (5).png.meta
+    - Assets/2D Space Kit/Debris/Debris (6).png
+    - Assets/2D Space Kit/Debris/Debris (6).png.meta
+    - Assets/2D Space Kit/Example Scene.meta
+    - Assets/2D Space Kit/Example Scene/Demo.unity
+    - Assets/2D Space Kit/Example Scene/Demo.unity.meta
+    - Assets/2D Space Kit/Example Scene/DemoSettings.lighting
+    - Assets/2D Space Kit/Example Scene/DemoSettings.lighting.meta
+    - Assets/2D Space Kit/Missiles.meta
+    - Assets/2D Space Kit/Missiles/Missile (1).png
+    - Assets/2D Space Kit/Missiles/Missile (1).png.meta
+    - Assets/2D Space Kit/Missiles/Missile (3).png
+    - Assets/2D Space Kit/Missiles/Missile (3).png.meta
+    - Assets/2D Space Kit/Missiles/Missile (4).png
+    - Assets/2D Space Kit/Missiles/Missile (4).png.meta
+    - Assets/2D Space Kit/Missiles/Missile (5).png
+    - Assets/2D Space Kit/Missiles/Missile (5).png.meta
+    - Assets/2D Space Kit/Missiles/Missile (6).png
+    - Assets/2D Space Kit/Missiles/Missile (6).png.meta
+    - Assets/2D Space Kit/Missiles/Missile (7).png
+    - Assets/2D Space Kit/Missiles/Missile (7).png.meta
+    - Assets/2D Space Kit/Particles (Sprites).meta
+    - Assets/2D Space Kit/Particles (Sprites)/Beam.png
+    - Assets/2D Space Kit/Particles (Sprites)/Beam.png.meta
+    - Assets/2D Space Kit/Particles (Sprites)/Big Projectile.png
+    - Assets/2D Space Kit/Particles (Sprites)/Big Projectile.png.meta
+    - Assets/2D Space Kit/Particles (Sprites)/BigFlare.png
+    - Assets/2D Space Kit/Particles (Sprites)/BigFlare.png.meta
+    - Assets/2D Space Kit/Particles (Sprites)/Burst.png
+    - Assets/2D Space Kit/Particles (Sprites)/Burst.png.meta
+    - Assets/2D Space Kit/Particles (Sprites)/DustSpray (1).png
+    - Assets/2D Space Kit/Particles (Sprites)/DustSpray (1).png.meta
+    - Assets/2D Space Kit/Particles (Sprites)/DustSpray (2).png
+    - Assets/2D Space Kit/Particles (Sprites)/DustSpray (2).png.meta
+    - Assets/2D Space Kit/Particles (Sprites)/Exhaust.png
+    - Assets/2D Space Kit/Particles (Sprites)/Exhaust.png.meta
+    - Assets/2D Space Kit/Particles (Sprites)/Explosion.png
+    - Assets/2D Space Kit/Particles (Sprites)/Explosion.png.meta
+    - Assets/2D Space Kit/Particles (Sprites)/Flare.png
+    - Assets/2D Space Kit/Particles (Sprites)/Flare.png.meta
+    - Assets/2D Space Kit/Particles (Sprites)/IonTrail.png
+    - Assets/2D Space Kit/Particles (Sprites)/IonTrail.png.meta
+    - Assets/2D Space Kit/Particles (Sprites)/Materials.meta
+    - Assets/2D Space Kit/Particles (Sprites)/Materials/Beam.mat
+    - Assets/2D Space Kit/Particles (Sprites)/Materials/Beam.mat.meta
+    - Assets/2D Space Kit/Particles (Sprites)/Materials/Exhaust.mat
+    - Assets/2D Space Kit/Particles (Sprites)/Materials/Exhaust.mat.meta
+    - Assets/2D Space Kit/Particles (Sprites)/Materials/Explosion.mat
+    - Assets/2D Space Kit/Particles (Sprites)/Materials/Explosion.mat.meta
+    - Assets/2D Space Kit/Particles (Sprites)/Materials/Flare Animorphic.mat
+    - Assets/2D Space Kit/Particles (Sprites)/Materials/Flare Animorphic.mat.meta
+    - Assets/2D Space Kit/Particles (Sprites)/Materials/Flare.mat
+    - Assets/2D Space Kit/Particles (Sprites)/Materials/Flare.mat.meta
+    - Assets/2D Space Kit/Particles (Sprites)/Materials/Ion Trail.mat
+    - Assets/2D Space Kit/Particles (Sprites)/Materials/Ion Trail.mat.meta
+    - Assets/2D Space Kit/Particles (Sprites)/Materials/Smoke Trail 1.mat
+    - Assets/2D Space Kit/Particles (Sprites)/Materials/Smoke Trail 1.mat.meta
+    - Assets/2D Space Kit/Particles (Sprites)/Materials/Smoke Trail 2.mat
+    - Assets/2D Space Kit/Particles (Sprites)/Materials/Smoke Trail 2.mat.meta
+    - Assets/2D Space Kit/Particles (Sprites)/Note on Flares.txt
+    - Assets/2D Space Kit/Particles (Sprites)/Note on Flares.txt.meta
+    - Assets/2D Space Kit/Particles (Sprites)/Projectile Sharp.png
+    - Assets/2D Space Kit/Particles (Sprites)/Projectile Sharp.png.meta
+    - Assets/2D Space Kit/Particles (Sprites)/Projectile Thin.png
+    - Assets/2D Space Kit/Particles (Sprites)/Projectile Thin.png.meta
+    - Assets/2D Space Kit/Particles (Sprites)/Shield Bubble.png
+    - Assets/2D Space Kit/Particles (Sprites)/Shield Bubble.png.meta
+    - Assets/2D Space Kit/Particles (Sprites)/Small Flare.png
+    - Assets/2D Space Kit/Particles (Sprites)/Small Flare.png.meta
+    - Assets/2D Space Kit/Particles (Sprites)/Smoke 1.png
+    - Assets/2D Space Kit/Particles (Sprites)/Smoke 1.png.meta
+    - Assets/2D Space Kit/Particles (Sprites)/Smoke 2.png
+    - Assets/2D Space Kit/Particles (Sprites)/Smoke 2.png.meta
+    - Assets/2D Space Kit/Particles (Sprites)/Smoke 3.png
+    - Assets/2D Space Kit/Particles (Sprites)/Smoke 3.png.meta
+    - Assets/2D Space Kit/Particles (Sprites)/SmokeTrail1.png
+    - Assets/2D Space Kit/Particles (Sprites)/SmokeTrail1.png.meta
+    - Assets/2D Space Kit/Particles (Sprites)/SmokeTrail2.png
+    - Assets/2D Space Kit/Particles (Sprites)/SmokeTrail2.png.meta
+    - Assets/2D Space Kit/Particles (Sprites)/Starflare.png
+    - Assets/2D Space Kit/Particles (Sprites)/Starflare.png.meta
+    - Assets/2D Space Kit/Prefabs.meta
+    - Assets/2D Space Kit/Prefabs/Explosion.prefab
+    - Assets/2D Space Kit/Prefabs/Explosion.prefab.meta
+    - Assets/2D Space Kit/Prefabs/Muzzle Flash.prefab
+    - Assets/2D Space Kit/Prefabs/Muzzle Flash.prefab.meta
+    - Assets/2D Space Kit/Prefabs/Projectile Sharp.prefab
+    - Assets/2D Space Kit/Prefabs/Projectile Sharp.prefab.meta
+    - Assets/2D Space Kit/Readme.txt
+    - Assets/2D Space Kit/Readme.txt.meta
+    - Assets/2D Space Kit/Scripts.meta
+    - Assets/2D Space Kit/Scripts/AimBeam.cs
+    - Assets/2D Space Kit/Scripts/AimBeam.cs.meta
+    - Assets/2D Space Kit/Scripts/Crosshair.cs
+    - Assets/2D Space Kit/Scripts/Crosshair.cs.meta
+    - Assets/2D Space Kit/Scripts/CustomPointer.cs
+    - Assets/2D Space Kit/Scripts/CustomPointer.cs.meta
+    - Assets/2D Space Kit/Scripts/ExampleShipControl.cs
+    - Assets/2D Space Kit/Scripts/ExampleShipControl.cs.meta
+    - Assets/2D Space Kit/Scripts/PSDestroy.cs
+    - Assets/2D Space Kit/Scripts/PSDestroy.cs.meta
+    - Assets/2D Space Kit/Scripts/ParallaxLayer.cs
+    - Assets/2D Space Kit/Scripts/ParallaxLayer.cs.meta
+    - Assets/2D Space Kit/Scripts/PlayerControlledTurret.cs
+    - Assets/2D Space Kit/Scripts/PlayerControlledTurret.cs.meta
+    - Assets/2D Space Kit/Scripts/Projectile.cs
+    - Assets/2D Space Kit/Scripts/Projectile.cs.meta
+    - Assets/2D Space Kit/Scripts/ShipCamera.cs
+    - Assets/2D Space Kit/Scripts/ShipCamera.cs.meta
+    - Assets/2D Space Kit/Scripts/WARNING.txt
+    - Assets/2D Space Kit/Scripts/WARNING.txt.meta
+    - Assets/2D Space Kit/Ships and Stations.meta
+    - Assets/2D Space Kit/Ships and Stations/Alien 1.png
+    - Assets/2D Space Kit/Ships and Stations/Alien 1.png.meta
+    - Assets/2D Space Kit/Ships and Stations/Alien 2.png
+    - Assets/2D Space Kit/Ships and Stations/Alien 2.png.meta
+    - Assets/2D Space Kit/Ships and Stations/Alien 3.png
+    - Assets/2D Space Kit/Ships and Stations/Alien 3.png.meta
+    - Assets/2D Space Kit/Ships and Stations/Alien 4.png
+    - Assets/2D Space Kit/Ships and Stations/Alien 4.png.meta
+    - Assets/2D Space Kit/Ships and Stations/Carrier 1.png
+    - Assets/2D Space Kit/Ships and Stations/Carrier 1.png.meta
+    - Assets/2D Space Kit/Ships and Stations/Cruiser 1.png
+    - Assets/2D Space Kit/Ships and Stations/Cruiser 1.png.meta
+    - Assets/2D Space Kit/Ships and Stations/Cruiser 2.png
+    - Assets/2D Space Kit/Ships and Stations/Cruiser 2.png.meta
+    - Assets/2D Space Kit/Ships and Stations/Cruiser 3.png
+    - Assets/2D Space Kit/Ships and Stations/Cruiser 3.png.meta
+    - Assets/2D Space Kit/Ships and Stations/Destroyer 1.png
+    - Assets/2D Space Kit/Ships and Stations/Destroyer 1.png.meta
+    - Assets/2D Space Kit/Ships and Stations/Destroyer 2.png
+    - Assets/2D Space Kit/Ships and Stations/Destroyer 2.png.meta
+    - Assets/2D Space Kit/Ships and Stations/Fighter 1.png
+    - Assets/2D Space Kit/Ships and Stations/Fighter 1.png.meta
+    - Assets/2D Space Kit/Ships and Stations/Fighter 2.png
+    - Assets/2D Space Kit/Ships and Stations/Fighter 2.png.meta
+    - Assets/2D Space Kit/Ships and Stations/Fighter 3.png
+    - Assets/2D Space Kit/Ships and Stations/Fighter 3.png.meta
+    - Assets/2D Space Kit/Ships and Stations/Fighter 4.png
+    - Assets/2D Space Kit/Ships and Stations/Fighter 4.png.meta
+    - Assets/2D Space Kit/Ships and Stations/Frigate 1.png
+    - Assets/2D Space Kit/Ships and Stations/Frigate 1.png.meta
+    - Assets/2D Space Kit/Ships and Stations/Frigate 2.png
+    - Assets/2D Space Kit/Ships and Stations/Frigate 2.png.meta
+    - Assets/2D Space Kit/Ships and Stations/Huge 1.png
+    - Assets/2D Space Kit/Ships and Stations/Huge 1.png.meta
+    - Assets/2D Space Kit/Ships and Stations/Rendering Tip.txt
+    - Assets/2D Space Kit/Ships and Stations/Rendering Tip.txt.meta
+    - Assets/2D Space Kit/Ships and Stations/Station 1.png
+    - Assets/2D Space Kit/Ships and Stations/Station 1.png.meta
+    - Assets/2D Space Kit/Ships and Stations/Station 2.png
+    - Assets/2D Space Kit/Ships and Stations/Station 2.png.meta
+    - Assets/2D Space Kit/Ships and Stations/Turret Platform.png
+    - Assets/2D Space Kit/Ships and Stations/Turret Platform.png.meta
+    - Assets/2D Space Kit/Turrets.meta
+    - Assets/2D Space Kit/Turrets/Crosshair.png
+    - Assets/2D Space Kit/Turrets/Crosshair.png.meta
+    - Assets/2D Space Kit/Turrets/Turret Large 1.png
+    - Assets/2D Space Kit/Turrets/Turret Large 1.png.meta
+    - Assets/2D Space Kit/Turrets/Turret Large 2.png
+    - Assets/2D Space Kit/Turrets/Turret Large 2.png.meta
+    - Assets/2D Space Kit/Turrets/Turret Medium 1.png
+    - Assets/2D Space Kit/Turrets/Turret Medium 1.png.meta
+    - Assets/2D Space Kit/Turrets/Turret Medium 2.png
+    - Assets/2D Space Kit/Turrets/Turret Medium 2.png.meta
+    - Assets/2D Space Kit/Turrets/Turret Medium 3.png
+    - Assets/2D Space Kit/Turrets/Turret Medium 3.png.meta
+    - Assets/2D Space Kit/Turrets/Turret Medium 4.png
+    - Assets/2D Space Kit/Turrets/Turret Medium 4.png.meta
+    - Assets/2D Space Kit/Turrets/Turret Small 1.png
+    - Assets/2D Space Kit/Turrets/Turret Small 1.png.meta
+    - Assets/2D Space Kit/Turrets/Turret Small 2.png
+    - Assets/2D Space Kit/Turrets/Turret Small 2.png.meta
+    - Assets/2D Space Kit/Turrets/Turret Small 3.png
+    - Assets/2D Space Kit/Turrets/Turret Small 3.png.meta
+    - Assets/2D Space Kit/Turrets/Turret Small 4.png
+    - Assets/2D Space Kit/Turrets/Turret Small 4.png.meta
+    - Assets/Prefab.meta
+    - Assets/Prefab/Enemy.prefab
+    - Assets/Prefab/Enemy.prefab.meta
+    - Assets/Prefab/Missile.prefab
+    - Assets/Prefab/Missile.prefab.meta
+    - Assets/Scenes.meta
+    - Assets/Scenes/GameScene.unity
+    - Assets/Scenes/GameScene.unity.meta
+    - Assets/Scenes/GameScenes.unity
+    - Assets/Scenes/GameScenes.unity.meta
+    - Assets/Script.meta
+    - Assets/Script/EnemyController.cs
+    - Assets/Script/EnemyController.cs.meta
+    - Assets/Script/GameManager.cs
+    - Assets/Script/GameManager.cs.meta
+    - Assets/Script/MissileController.cs
+    - Assets/Script/MissileController.cs.meta
+    - Assets/Script/PlayerConroller.cs
+    - Assets/Script/PlayerConroller.cs.meta
+    - Packages/manifest.json
+    - Packages/packages-lock.json
+    - ProjectSettings/AudioManager.asset
+    - ProjectSettings/ClusterInputManager.asset
+    - ProjectSettings/DynamicsManager.asset
+    - ProjectSettings/EditorBuildSettings.asset
+    - ProjectSettings/EditorSettings.asset
+    - ProjectSettings/GraphicsSettings.asset
+    - ProjectSettings/InputManager.asset
+    - ProjectSettings/MemorySettings.asset
+    - ProjectSettings/NavMeshAreas.asset
+    - ProjectSettings/Physics2DSettings.asset
+    - ProjectSettings/PresetManager.asset
+    - ProjectSettings/ProjectSettings.asset
+    - ProjectSettings/ProjectVersion.txt
+    - ProjectSettings/QualitySettings.asset
+    - ProjectSettings/TagManager.asset
+    - ProjectSettings/TimeManager.asset
+    - ProjectSettings/UnityConnectSettings.asset
+    - ProjectSettings/VFXManager.asset
+    - ProjectSettings/VersionControlSettings.asset
+    - 
+    m_Values: 010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101
+  RevisionSummary: 
+  ChangesSearchValue: 
+  SelectedHistoryRevision: 
+  HistoryPageNumber: 0
+  TabIndex: 0
