@@ -7,9 +7,9 @@ public class PlayerConroller : MonoBehaviour
 	public float moveSpeed = 10f;
 [Header("Missile")]
 	public GameObject MissiliePrefab;
-	public float MuzzleSpawnPosition;
+	public Transform MuzzleSpawnPosition;
 	public float DestroyTime = 5f;
-public Transform MissileSpawnPoint;
+    public Transform MissileSpawnPoint;
 private void Update()
 {
 		MovePlayer();
@@ -38,7 +38,7 @@ void SpawnMissile()
 	{
 		GameObject gm = Instantiate(MissiliePrefab, MissileSpawnPoint.position, Quaternion.identity);
 		gm.transform.SetParent(null);
-			Destroy(gm, DestroyTime);
+		Destroy(gm, DestroyTime);
 	}
 	void SpawnMuzzleFlash()
 	{

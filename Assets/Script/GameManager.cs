@@ -18,6 +18,10 @@ public class GameManager : MonoBehaviour
     public GameObject ParticleEffect;
     public GameObject MuzzleFlashEffect;
 
+    [Header("Panels")]
+    public GameObject StartMenu;
+    public GameObject PausePanel;
+
     private void Awake()
     {
         if (instance == null)
@@ -31,9 +35,18 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
+        StartMenu.SetActive(true);
+        PausePanel.SetActive(false);
+        Time.timeScale = 0f;
         InvokeRepeating("InstantiateEnemy", 1f, 1f);
     }
-
+private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            PauseGameButton(true);
+        }
+    }
     // Update is called once per frame
     void InstantiateEnemy()
     {
@@ -41,5 +54,27 @@ public class GameManager : MonoBehaviour
         GameObject enemy = Instantiate(EnemyPrefab, Enemypos, Quaternion.Euler(0, 0, 180f));
         Destroy(enemy, enemyDestroyTime);
     }
-   
+    public void StartGameButton()
+    {
+        StartMenu.SetActive(false);
+        Time.timeScale = 1f;
+    }
+    public void PauseGameButton(bool isPaused)
+    {
+        if (isPaused)
+        {
+            Time.timeScale = 0f;
+            PausePanel.SetActive(true);
+        }
+        else
+        {
+            Time.timeScale = 1f;
+            PausePanel.SetActive(false);
+        }
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
