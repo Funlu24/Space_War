@@ -15,9 +15,12 @@ void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Destroy(collision.gameObject);
-            Destroy(gameObject);
-        }
+
+           GameObject gm = Instantiate(GameManager.instance.ParticleEffect, transform.position, Quaternion.identity);
+           Destroy(gm, 2f);
+         Destroy(collision.gameObject);
+            Destroy(gameObject); 
+            }
 
     }
 }

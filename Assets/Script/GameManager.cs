@@ -7,10 +7,28 @@ public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject EnemyPrefab;
+
+    public static GameManager instance;
     public float minInstantiateValue;
     public float maxInstantiateValue;
 
     public float enemyDestroyTime = 10f;
+
+    [Header("Particle Effects")]
+    public GameObject ParticleEffect;
+    public GameObject MuzzleFlashEffect;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     void Start()
     {
         InvokeRepeating("InstantiateEnemy", 1f, 1f);
@@ -23,4 +41,5 @@ public class GameManager : MonoBehaviour
         GameObject enemy = Instantiate(EnemyPrefab, Enemypos, Quaternion.Euler(0, 0, 180f));
         Destroy(enemy, enemyDestroyTime);
     }
+   
 }
