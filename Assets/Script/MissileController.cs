@@ -12,16 +12,19 @@ public class MissileController : MonoBehaviour
          transform.Translate(Vector3.up * Missilespeed * Time.deltaTime);
     }
 void OnCollisionEnter2D(Collision2D collision)
+{
+    if (collision.gameObject.CompareTag("Enemy"))
     {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
+        // Efekt oluştur
+        GameObject gm = Instantiate(GameManager.instance.ParticleEffect, transform.position, Quaternion.identity);
+        Destroy(gm, 2f);
 
-           GameObject gm = Instantiate(GameManager.instance.ParticleEffect, transform.position, Quaternion.identity);
-           Destroy(gm, 2f);
-         Destroy(collision.gameObject);
-            Destroy(gameObject); 
-            }
+        // YENİ: SKOR EKLE (Örneğin 100 puan)
+        GameManager.instance.AddScore(100);
 
+        Destroy(collision.gameObject); // Düşmanı yok et
+        Destroy(gameObject); // Mermiyi yok et
     }
+}
 }
   
