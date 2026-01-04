@@ -2109,7 +2109,7 @@ MonoBehaviour:
   MuzzleSpawnPosition: {fileID: 1863313159}
   DestroyTime: 5
   MissileSpawnPoint: {fileID: 905499511}
-  shipAnimator: {fileID: 0}
+  shipAnimator: {fileID: 1931797143}
 --- !u!61 &1931797141
 BoxCollider2D:
   m_ObjectHideFlags: 0
