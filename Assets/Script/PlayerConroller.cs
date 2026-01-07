@@ -59,8 +59,8 @@ public class PlayerConroller : MonoBehaviour
     void ProcessInputs()
     {
         // Tuş verilerini alıp değişkenlere kaydediyoruz
-        moveX = Input.GetAxis("Horizontal");
-        moveZ = Input.GetAxis("Vertical");
+        moveX = Input.GetAxisRaw("Horizontal");
+        moveZ = Input.GetAxisRaw("Vertical");
 
         // Motor Efekt Kontrolü (Görsel olduğu için Update/ProcessInput içinde kalabilir)
         if (EngineThrustEffect != null)
@@ -74,7 +74,6 @@ public class PlayerConroller : MonoBehaviour
         {
             shipAnimator.SetBool("IsMoving", moveX != 0 || moveZ != 0);
         }
-    }
 
     void MovePlayer()
     {
