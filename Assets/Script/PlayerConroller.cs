@@ -74,6 +74,7 @@ public class PlayerConroller : MonoBehaviour
         {
             shipAnimator.SetBool("IsMoving", moveX != 0 || moveZ != 0);
         }
+    }
 
     void MovePlayer()
     {
